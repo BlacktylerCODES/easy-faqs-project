@@ -1,0 +1,139 @@
+@font-face {
+    font-family: bubble;
+    src: url(/WorkSans-Italic-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: bubble;
+    background-color: rgb(241, 215, 215);
+}
+
+.section{
+    min-height: 70vh;
+    width: 80%;
+    margin:150px 60px 200px;
+    padding: 10px 15px;
+    display: block;
+    background-color: rgb(226, 226, 219);
+    border-radius: 30px;
+}
+
+.title{
+    font-size: 50px;
+    margin-left: 10px;
+    margin: 30px 70px;
+    color: rgb(71, 53, 71);
+}
+
+.back{
+    background: rgb(236, 243, 242);
+    margin: 0px 280px 300px;
+}
+
+.questions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: bubble;
+    padding-top: 10px;
+}
+
+
+.questions:hover{
+    color: indigo;
+}
+
+.button{
+    color: white;
+    background-color: indigo;
+    border-radius: 120px;
+    padding: 6px 6px;
+    cursor: pointer;
+    border: none;
+}
+
+.answer{
+    margin: 10px 10px;
+    color: rgb(95, 87, 77);
+    overflow: hidden;
+    max-height: 0;
+}
+
+.faqs.active .answer{
+    max-height: 300px;
+    display: block;
+}
+
+
+@media only screen and (max-width:600px) {
+    .body{
+        font-family: bubble;
+        background-color: rgb(241, 215, 215);
+    }
+
+    .faqs{
+        display: block;
+        position: relative;
+    }
+    
+    .section{
+        width: 350px;
+        margin: 0 0 0;
+        display: block;
+        background-color: rgb(226, 226, 219);
+        border-radius: 30px;
+    }
+    
+    .title{
+        font-size: 50px;
+        color: rgb(71, 53, 71);
+    }
+    
+    .back{
+        background: rgb(236, 243, 242);
+        margin: 0 0 0;
+    }
+    
+    .questions{
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        font-family: bubble;
+        padding-top: 10px;
+    }
+    
+    
+    .questions hover{
+        color: indigo;
+    }
+    
+    .button{
+        color: white;
+        background-color: indigo;
+        border-radius: 120px;
+        padding: 6px 6px;
+        cursor: pointer;
+        border: none;
+    }
+    
+    .answer{
+        margin: 10px 10px;
+        color: rgb(95, 87, 77);
+        overflow: hidden;
+        max-height: 0;
+    }
+    
+    .faqs.active .answer{
+        max-height: 300px;
+        display: block;
+    }
+    
+    
+}
